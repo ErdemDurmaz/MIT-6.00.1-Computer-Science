@@ -8,7 +8,6 @@ def gcditer(a,b):
     lowest = min(a,b)
     biggest = max(a,b)
     orglowest = lowest
-    #orgbiggest = biggest
     while lowest >0:
         
         if biggest % lowest == 0 and orglowest % lowest == 0:
