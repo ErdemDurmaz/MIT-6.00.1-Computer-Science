@@ -5,14 +5,15 @@ to the smaller of the two input arguments, and iteratively reduce this test valu
 until you either reach a case where the test divides both a and b without remainder, or you reach 1.
 '''
 def gcditer(a,b):
-    if a > b :
-        for i in range(6,0):
-            if a % b == 0:
-                print("Found it a")
-        b -=1
-    if b > a :
-        for i in a :
-            if b % a == 0:
-                print("Found it b")
-            a -=1
-gcditer(12,6)
+    lowest = min(a,b)
+    biggest = max(a,b)
+    orglowest = lowest
+    #orgbiggest = biggest
+    while lowest >0:
+        
+        if biggest % lowest == 0 and orglowest % lowest == 0:
+            print('Found it',lowest)
+            quit()
+        lowest -= 1
+        
+gcditer(17,12)
