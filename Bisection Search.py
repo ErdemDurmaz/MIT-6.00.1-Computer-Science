@@ -1,7 +1,7 @@
 
 high = 100
 low = 0
-guess = (high + low) / 2 #gerizekali neden?
+guess = (high + low) / 2
 status = ""
 
 print("Please think of a number between 0 and 100!")
