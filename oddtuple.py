@@ -7,10 +7,8 @@ def oddTuples(aTup):
     returns: tuple, every other element of aTup.
     '''
     myarray = []
-    
-    
-    
-    
+
+    #behram was here
     for i, item in enumerate(aTup):
         if (i) % 2 == 0:
             myarray.append(item)
@@ -18,3 +16,5 @@ def oddTuples(aTup):
     return tuple(myarray)    
 
 print(oddTuples(("a","b","c","d","e","f")))
+
+
