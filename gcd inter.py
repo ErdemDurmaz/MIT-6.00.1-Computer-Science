@@ -9,10 +9,8 @@ def gcditer(a,b):
     biggest = max(a,b)
     orglowest = lowest
     while lowest >0:
-        
         if biggest % lowest == 0 and orglowest % lowest == 0:
             print('Found it',lowest)
             quit()
         lowest -= 1
-        
 gcditer(17,12)
