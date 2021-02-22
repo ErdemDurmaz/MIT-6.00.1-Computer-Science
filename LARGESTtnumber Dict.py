@@ -10,4 +10,4 @@ def biggest(aDict):
         if len(aDict[key]) >= biggestValue:
             result = key
             biggestValue = len(aDict[key])
-    return result   
+    return result
